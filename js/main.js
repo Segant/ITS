@@ -19,7 +19,7 @@ $(document).ready(function () {
         }).eq(0).addClass("active");
     }
 
-    tabs(".arcticles__inner");
+    tabs(".tabs-wrap");
 
     function mobileMenu() {
         $('.burger').click(function (e) {
