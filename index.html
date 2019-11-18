@@ -213,7 +213,7 @@
                         <form class="feedback__form">
                             <div class="form-row">
                                 <div class="input-wrap" >
-                                    <input type="text" placeholder="Иван Иванов">
+                                    <input type="text" placeholder="Ваше имя">
                                 </div>
                                 <div class="input-wrap" >
                                     <input type="text" placeholder="Ваш телефон">
@@ -223,11 +223,24 @@
                                 </div>
                             </div>
                             <div class="form-row">
-                                <textarea name=""></textarea>
+                                <div class="input-wrap input-wrap--w100">
+                                    <textarea name="" placeholder="Комментарий"></textarea>
+                                </div>
                             </div>
                             <div class="form-row">
-                                <button class="btn btn-form" type="submit">Отправить запрос</button>
+                                <button class="btn btn-form btn-action" type="submit">Отправить запрос</button>
+
+                                <div class="input-wrap input-wrap--w100">
+                                    <div class="checkbox">
+                                        <label for="policy" class="">
+                                            <input id="policy" class="checkbox-input" name="policy" type="checkbox" required="">
+                                            <span class="checkmark"></span>
+                                            <span class="checkbox-text">Вы соглашаетесь с политику конфиденциальности и обработку персональных данных</span>
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
+
                         </form>
                     </div>
                 </div>
