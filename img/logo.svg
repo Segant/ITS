@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="124" height="119.524" viewBox="0 0 124 119.524">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}.cls-2{fill:#30d0a4}
+        </style>
+    </defs>
+    <g id="Логотип" transform="translate(-361.392 -432.868)">
+        <path id="Path_1" d="M475.114 525.651v26.741l-13.238-.015a26.6 26.6 0 0 1-26.564-26.564h-.074v-66.425a26.521 26.521 0 0 1 26.52-26.52h.118v26.52h13.238v26.741h-13.238v26.977a13.243 13.243 0 0 0 13.238 12.545" class="cls-1" data-name="Path 1" transform="translate(-38.344)"/>
+        <g id="Group_1" data-name="Group 1" transform="translate(445.634 459.609)">
+            <path id="Path_2" d="M576.377 605.626v6.412a26.509 26.509 0 0 1-26.505 26.505h-13.253v-26.504h.118a13.262 13.262 0 0 0 13.253-13.253h19.547a6.845 6.845 0 0 1 6.84 6.84z" class="cls-1" data-name="Path 2" transform="translate(-536.619 -545.761)"/>
+            <path id="Path_3" d="M576.377 488.491v26.49h-.118a13.263 13.263 0 0 0-13.253 13.253h-19.547a6.836 6.836 0 0 1-6.84-6.84v-6.413a26.475 26.475 0 0 1 26.505-26.49z" class="cls-1" data-name="Path 3" transform="translate(-536.619 -488.491)"/>
+        </g>
+        <path id="Path_4" d="M388.03 488.476v92.79a26.672 26.672 0 0 1-26.638-26.666v-39.457a26.671 26.671 0 0 1 26.638-26.667z" class="cls-1" data-name="Path 4" transform="translate(0 -28.874)"/>
+        <path id="Path_5" d="M388.04 432.868a26.669 26.669 0 0 1-26.64 26.653v-19.99a6.656 6.656 0 0 1 6.663-6.663z" class="cls-2" data-name="Path 5" transform="translate(-.005)"/>
+    </g>
+</svg>

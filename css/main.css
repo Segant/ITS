@@ -298,7 +298,8 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    color: #fff;
+    font-family: arial;
+    color: #0f0f10;
     font-weight: normal;
     font-size: 1rem;
     position: relative;
@@ -346,7 +347,6 @@ body {
 
 
 .content {
-    overflow-x: hidden;
     position: relative;
 }
 
@@ -354,3 +354,232 @@ body {
     flex: 0 0 auto;
 }
 
+.container{
+    width: 100%;
+    max-width: calc(1276px + (15px * 2));
+    margin: auto;
+}
+
+.section-hero{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+}
+
+.hero-bg{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: block;
+    z-index: -1;
+}
+
+.section-hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.6);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.hero__logo{
+    max-width: 124px;
+    margin-bottom: 40px;
+}
+
+.hero__inner{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, calc(-50% - (138px / 2)));
+    padding-left: 144px;
+}
+
+.hero__text{
+    max-width: 700px;
+    width: 100%;
+    line-height: 28px;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.btn {
+    display: block;
+    max-width: 304px;
+    width: 100%;
+    border-radius: 5px;
+    
+    padding-top: 9px;
+    padding-bottom: 8px;
+    text-align: center;
+    width: 200px;
+    color: #30d0a4;
+    border: solid 1px #30d0a4;
+    font-size: 16px;
+    line-height: 19px;
+    transition: all .3s ease;
+}
+
+.btn-action{
+    min-width: 200px;
+    width: 100%;
+    max-width: 314px;
+    padding-top: 19px;
+    padding-bottom: 20px;
+    color: #fff;
+    background: linear-gradient(94deg, #30d0a4 -26%, rgba(48, 208, 164, 0.81) 61%, rgba(48, 208, 164, 0.56) 216%);
+    text-align: left;
+    position: relative;
+    padding-left: 35px;
+    padding-right: 60px;
+    border: none;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.btn-action::after{
+    content: '';
+    background: url('../img/ar.png') center no-repeat;
+    background-size: contain;
+    top: 0;
+    right: 30px;
+    bottom: 0;
+    margin: auto;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+}
+
+.wrapper .active {
+    color: red;
+}
+
+.section-arcticles{
+    position: relative;
+    /* top: -134px; */
+    transform: translate(0, -138px);
+    margin-bottom: 50px;
+
+}
+
+
+.grid-row{
+    /* display: flex; */
+}
+
+.grid__item{
+    width: 100%;
+    padding-top: 35px;
+    padding-left: 35px;
+    display: inline-block;
+    padding-right: 64px;
+    max-width: 268px;
+    padding-bottom: 20px;
+    background: #fff;
+    vertical-align: top;
+    margin-right: 20px;
+    position: relative;
+    min-height: 276px;
+      box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+}
+
+.no-select{
+    pointer-events: none;
+}
+
+.grid__item .btn{
+    position: absolute;
+    bottom: 20px;
+}
+
+.tabs .grid__item{
+    cursor: pointer;
+    transition: all .3s ease;
+    box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.05);
+
+}
+
+.tabs .grid__item:hover{
+    box-shadow: 0 24px 48px 0 rgba(0, 0, 0, 0.15);
+}
+
+.tabs .grid__item:hover .btn{
+    color: #fff;
+    border: solid 1px #30d0a4;
+    background: #30d0a4;
+}
+
+.tab_item{
+    margin-top: 20px;
+}
+
+.grid__item h2{
+    font-size: 18px;
+    left: 21px;
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+.grid__item p{
+    font-size: 14px;
+    padding-left: 21px;
+    margin-bottom: 20px;
+}
+
+.grid__item p:last-child{
+    margin-bottom: 0;
+}
+
+.grid__item--700{
+    max-width: 700px;
+}
+
+.grid__item--w100{
+    max-width: 100%;
+}
+
+.tabs_artiles .grid__item {
+     border-radius: 5px;
+     box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.05);
+}
+
+.title-dec{
+    position: relative;
+    font-size: 46px;
+    line-height: 56px;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.title-dec::before{
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 16px;
+    top: -16px;
+    left: -16px;
+    background: url('../img/dec.svg') center no-repeat;
+}
+
+.title-dec::after {
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 16px;
+    bottom: -16px;
+    right: -16px;
+    background: url('../img/dec.svg') center no-repeat;
+    transform: rotate(180deg);
+}
+
+.section-nums{
+    margin-bottom: 170px;
+}
