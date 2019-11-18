@@ -583,3 +583,52 @@ body {
 .section-nums{
     margin-bottom: 170px;
 }
+
+.nums__inner{
+    padding: 30px 60px;
+    margin-bottom: 14px;
+    border-radius: 5px;
+    box-shadow: 0 12px 24px 0 rgba(85, 85, 85, 0.05);
+    background-image: linear-gradient(93deg, #30d0a4 0%, rgba(48, 208, 164, 0.64) 132%);
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    
+    
+    
+}
+
+.num{
+width: 33%;
+border-right: solid 1px #ffffff;
+min-height: 115px;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+
+
+.num p {
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.num span{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.num:last-child{
+    border: none;
+}
+
+.num__inner{
+       width: 184px;
+       margin: auto;
+       position: absolute;
+       transform: translate(-50%, -50%);
+       top: 50%;
+       left: 50%;
+}
