@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1172" height="1080" viewBox="0 0 1172 1080">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.805" gradientTransform="translate(0 -0.024) scale(1 1.047)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0" stop-color="#00e48f" stop-opacity="0.945"/>
+      <stop offset="0.453" stop-color="#00e48f" stop-opacity="0.698"/>
+      <stop offset="1" stop-color="#00e48f" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="0.5" cy="0.5" r="0.805" gradientTransform="translate(0 -0.024) scale(1 1.047)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0" stop-color="#fff" stop-opacity="0.945"/>
+      <stop offset="0.453" stop-color="#fff" stop-opacity="0.698"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_258" data-name="Group 258" transform="translate(-374)">
+    <line id="Line_1" data-name="Line 1" y2="721" transform="translate(960)" fill="none" stroke="#fff" stroke-width="1" opacity="0.3"/>
+    <line id="Line_2" data-name="Line 2" y2="416" transform="translate(1248)" fill="none" stroke="#fff" stroke-width="1" opacity="0.3"/>
+    <line id="Line_3" data-name="Line 3" y2="768" transform="translate(1536 311)" fill="none" stroke="#fff" stroke-width="1" opacity="0.3"/>
+    <line id="Line_4" data-name="Line 4" y2="432" transform="translate(672 647)" fill="none" stroke="#fff" stroke-width="1" opacity="0.3"/>
+    <line id="Line_5" data-name="Line 5" y2="847" transform="translate(384)" fill="none" stroke="#fff" stroke-width="1" opacity="0.3"/>
+    <rect id="Rectangle_92" data-name="Rectangle 92" width="20" height="20" rx="2" transform="translate(950 721)" opacity="0.7" fill="url(#radial-gradient)"/>
+    <line id="Line_6" data-name="Line 6" y2="339" transform="translate(960 741)" fill="none" stroke="#fff" stroke-width="1" opacity="0.3"/>
+    <rect id="Rectangle_93" data-name="Rectangle 93" width="20" height="20" rx="2" transform="translate(1238 416)" fill="url(#radial-gradient-2)"/>
+    <line id="Line_7" data-name="Line 7" y2="643" transform="translate(1248 436)" fill="none" stroke="#fff" stroke-width="1" opacity="0.3"/>
+    <rect id="Rectangle_94" data-name="Rectangle 94" width="20" height="20" rx="2" transform="translate(1526 291)" opacity="0.7" fill="url(#radial-gradient)"/>
+    <line id="Line_8" data-name="Line 8" y2="291" transform="translate(1536)" fill="none" stroke="#fff" stroke-width="1" opacity="0.3"/>
+    <rect id="Rectangle_95" data-name="Rectangle 95" width="20" height="20" rx="2" transform="translate(662 237)" fill="url(#radial-gradient-2)"/>
+    <line id="Line_9" data-name="Line 9" y2="237" transform="translate(672)" fill="none" stroke="#fff" stroke-width="1" opacity="0.3"/>
+    <rect id="Rectangle_96" data-name="Rectangle 96" width="20" height="20" rx="2" transform="translate(374 847)" fill="url(#radial-gradient-2)"/>
+    <line id="Line_10" data-name="Line 10" y2="212" transform="translate(384 867)" fill="none" stroke="#fff" stroke-width="1" opacity="0.3"/>
+    <line id="Line_72" data-name="Line 72" y2="140" transform="translate(672 257)" fill="none" stroke="#fff" stroke-width="1" opacity="0.3"/>
+    <line id="Line_73" data-name="Line 73" y2="190" transform="translate(672 397)" fill="none" stroke="#fff" stroke-width="1" opacity="0.3"/>
+  </g>
+</svg>
