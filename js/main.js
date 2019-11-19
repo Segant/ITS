@@ -46,7 +46,9 @@ $(document).ready(function () {
 
         $('.acco__item-head').click(function (e) {
             $('.acco').css('margin-bottom', 20);
+            $('.acco__item-head').removeClass('active');
             $('.acco__item-head').next().removeClass('active');
+            $(this).addClass('active');
             $(this).next().addClass('active');
             $(this).parent().parent().css('margin-bottom', $(this).next().outerHeight() + 44);
         })
@@ -129,6 +131,6 @@ $(document).ready(function () {
     }
     checkValidate();
 
-    $('input[placeholder="Номер телефона"]').inputmask('+7(999)999-99-99');
+    $('input[placeholder="Ваш телефон"]').inputmask('+7(999)999-99-99');
 
 })

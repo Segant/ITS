@@ -1,0 +1,8 @@
+<svg id="Component_2_2" data-name="Component 2 – 2" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+  <rect id="Rectangle_16" data-name="Rectangle 16" width="28" height="28" fill="rgba(37,37,37,0)"/>
+  <g id="Group_34" data-name="Group 34" transform="translate(7 7)">
+    <path id="Path_17" data-name="Path 17" d="M9.933,0H4.067A4.071,4.071,0,0,0,0,4.067V9.933A4.071,4.071,0,0,0,4.067,14H9.933A4.071,4.071,0,0,0,14,9.933V4.067A4.071,4.071,0,0,0,9.933,0Zm2.973,9.933a2.976,2.976,0,0,1-2.973,2.973H4.067A2.976,2.976,0,0,1,1.094,9.933V4.067A2.976,2.976,0,0,1,4.067,1.094H9.933a2.976,2.976,0,0,1,2.973,2.973Z" transform="translate(0 0)" fill="#30d0a4" stroke="#30d0a4" stroke-width="0.5"/>
+    <path id="Path_18" data-name="Path 18" d="M121.773,118a3.773,3.773,0,1,0,3.773,3.773A3.778,3.778,0,0,0,121.773,118Zm0,6.453a2.68,2.68,0,1,1,2.68-2.68A2.683,2.683,0,0,1,121.773,124.453Z" transform="translate(-114.773 -114.773)" fill="#30d0a4" stroke="#30d0a4" stroke-width="0.5"/>
+    <ellipse id="Ellipse_1" data-name="Ellipse 1" cx="0.547" cy="0.547" rx="0.547" ry="0.547" transform="translate(10.281 2.625)" fill="#30d0a4" stroke="#30d0a4" stroke-width="0.5"/>
+  </g>
+</svg>
