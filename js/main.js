@@ -8,6 +8,25 @@ $(document).ready(function () {
     //     prevArrow: "<a class='slick-prev'>Назад</a>",
     //     nextArrow: "<a class='btn slick-next'>Следующий вопрос</a>"
     // });
+    // $(".nav__link").click(function () {
+    //     $('.nav__link').addClass('active');
+    //     $('html, body').animate({
+    //         // scrollTop: $(".footer").offset().top
+    //     }, 1000);
+    // });
+
+    $('.nav__link').click(function(){
+        // $('.nav__link').removeClass('active');
+        // $(this).addClass('active');
+    })
+
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 1000);
+    });
 
     function tabs(wrapper){
         wrapper = $(wrapper) || $(".wrapper");
