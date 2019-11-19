@@ -15,7 +15,7 @@ $(document).ready(function () {
     //     }, 1000);
     // });
 
-    $('.nav__link').click(function(){
+    $('.nav__link').click(function () {
         // $('.nav__link').removeClass('active');
         // $(this).addClass('active');
     })
@@ -28,17 +28,33 @@ $(document).ready(function () {
         }, 1000);
     });
 
-    function tabs(wrapper){
-        wrapper = $(wrapper) || $(".wrapper");
-        var tab = wrapper.find(".tab");
-        $(".tab_item").not(":first").hide();
-        tab.click(function () {
-            tab.removeClass("active").eq($(this).index()).addClass("active");
-            $(".tab_item").hide().eq($(this).index()).fadeIn()
-        }).eq(0).addClass("active");
+    // function tabs(wrapper){
+    //     wrapper = $(wrapper) || $(".wrapper");
+    //     var tab = wrapper.find(".tab");
+    //     $(".tab_item").not(":first").hide();
+    //     tab.click(function () {
+    //         tab.removeClass("active").eq($(this).index()).addClass("active");
+    //         $(".tab_item").hide().eq($(this).index()).fadeIn()
+    //     }).eq(0).addClass("active");
+    // }
+
+    // tabs(".tabs-wrap");
+
+    function accoDesktop() {
+
+        
+
+        $('.acco__item-head').click(function (e) {
+            $('.acco').css('margin-bottom', 20);
+            $('.acco__item-head').next().removeClass('active');
+            $(this).next().addClass('active');
+            $(this).parent().parent().css('margin-bottom', $(this).next().outerHeight() + 44);
+        })
+
     }
 
-    tabs(".tabs-wrap");
+    accoDesktop();
+
 
     function mobileMenu() {
         $('.burger').click(function (e) {
