@@ -1503,6 +1503,7 @@ input.error+.checkmark {
         width: 30px;
         height: 30px;
         right: 15px;
+        font-size: 0 !important;
     }
 
     .grid__item .btn {
