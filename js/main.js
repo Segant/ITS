@@ -41,9 +41,6 @@ $(document).ready(function () {
     // tabs(".tabs-wrap");
 
     function accoDesktop() {
-
-        
-
         $('.acco__item-head').click(function (e) {
             $('.acco').css('margin-bottom', 20);
             $('.acco__item-head').removeClass('active');
@@ -52,10 +49,23 @@ $(document).ready(function () {
             $(this).next().addClass('active');
             $(this).parent().parent().css('margin-bottom', $(this).next().outerHeight() + 44);
         })
-
     }
 
-    accoDesktop();
+    function accoMobile() {
+        $('.acco__item-head').click(function (e) {
+            $('.acco__item-head').removeClass('active');
+            $('.acco__item-head').next().removeClass('active');
+            $(this).addClass('active');
+            $(this).next().addClass('active');
+        })
+    }
+
+    if($(window).width() > 1300){
+        accoDesktop();
+    } else{
+        accoMobile();
+    }
+
 
 
     function mobileMenu() {

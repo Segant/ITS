@@ -409,6 +409,8 @@ body {
     bottom: 0;
     display: block;
     z-index: -1;
+    /* background: url('../img/bgbg.jpg') center no-repeat; */
+    background-size: cover;
 }
 
 .section-hero::before{
@@ -444,10 +446,13 @@ body {
 }
 
 .hero__inner {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, calc(-50% - (138px / 2)));
-    padding-left: 144px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, calc(-50% - (138px / 2)));
+        /* padding-left: 144px; */
+        max-width: 1020px;
+        width: 100%;
 }
 
 .hero__text {
@@ -1075,6 +1080,9 @@ input.error+.checkmark {
     background: center no-repeat;
     background-size: contain;
     transition: all .3s ease;
+}
+
+.socials--footer .socials__link{
     opacity: .7;
 }
 
@@ -1109,6 +1117,7 @@ input.error+.checkmark {
         text-align: right;
         max-width: 236px;
         width: 100%;
+        z-index: 1;
 }
 
 .nav__list li{
@@ -1206,4 +1215,62 @@ input.error+.checkmark {
 
 .filters__item:last-child{
     margin-right: 0;
+}
+
+
+@media(max-width:1300px){
+    .grid-row{
+        flex-wrap: wrap;
+    }
+    .acco .grid__item{
+        margin-bottom: 20px;
+    }
+
+    .acco__item{
+        width: 50%;
+    }
+
+    .acco__item--700{
+        width: 100%;
+    }
+
+    .grid__item.grid__item--700 {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .grid__item{
+        max-width: 100%;
+    }
+
+    .section-arcticles{
+            transform: translate(0, -90px);
+    }
+
+    .portf__inner .grid-row{
+        margin-bottom: 0;
+    }
+
+    .acco .acco__item-body.grid__item{
+        position: static;
+        visibility: hidden;
+        margin-top: 0;
+        display: none;
+    }
+
+    .acco .acco__item-body.grid__item.active{
+        visibility: visible;
+        display: block;
+    }
+
+    .portf__inner .acco__item.acco__item--700 {
+        max-width: 100%;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .portf__inner .acco__item{
+        max-width: 49%;
+        /* width: 50%; */
+    }
 }
