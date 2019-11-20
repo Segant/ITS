@@ -15,6 +15,10 @@ $(document).ready(function () {
     //     }, 1000);
     // });
 
+    $('.burger').click(function(){
+        $('.nav').addClass('active');
+    })
+
     $('.nav__link').click(function () {
         // $('.nav__link').removeClass('active');
         // $(this).addClass('active');

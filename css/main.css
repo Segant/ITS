@@ -1259,6 +1259,10 @@ input.error+.checkmark {
     margin-right: 0;
 }
 
+.hero__logo{
+    display: none;
+}
+
 
 @media(max-width:1560px) {
     .nav {
@@ -1670,5 +1674,24 @@ input.error+.checkmark {
 
     .socials--header .socials__ul{
         opacity: 0;
+    }
+
+    .nav{
+        display: block;
+            left: -100%;
+            transition: all .3s ease;
+    }
+
+    .nav.active{
+        left: 0;
+    }
+
+    .nav__list{
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding-right: 60px;
     }
 }
