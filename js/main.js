@@ -20,8 +20,8 @@ $(document).ready(function () {
     })
 
     $('.nav__link').click(function () {
-        // $('.nav__link').removeClass('active');
-        // $(this).addClass('active');
+        $('.nav__link').removeClass('active');
+        $(this).addClass('active');
     })
 
     $(document).on('click', 'a[href^="#"]', function (event) {
