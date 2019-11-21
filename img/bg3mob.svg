@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="338" height="816" viewBox="0 0 338 816">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.805" gradientTransform="translate(0 -0.024) scale(1 1.047)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0" stop-color="#fff" stop-opacity="0.945"/>
+      <stop offset="0.453" stop-color="#fff" stop-opacity="0.698"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_258" data-name="Group 258" transform="translate(-18.5 -2665)">
+    <g id="Вертикальные_линии" data-name="Вертикальные линии" transform="translate(0 3402.5)" opacity="0.6">
+      <line id="Line_98" data-name="Line 98" y2="192" transform="translate(187 -113.5)" fill="none" stroke="#fff" stroke-width="1" opacity="0.1"/>
+      <line id="Line_99" data-name="Line 99" y2="193" transform="translate(299 -114.5)" fill="none" stroke="#fff" stroke-width="1" opacity="0.1"/>
+      <line id="Line_100" data-name="Line 100" y2="193" transform="translate(356 -114.5)" fill="none" stroke="#fff" stroke-width="1" opacity="0.1"/>
+      <line id="Line_101" data-name="Line 101" y2="193" transform="translate(19 -114.5)" fill="none" stroke="#fff" stroke-width="1" opacity="0.1"/>
+      <line id="Line_102" data-name="Line 102" y2="193" transform="translate(131.5 -115)" fill="none" stroke="#fff" stroke-width="1" opacity="0.1"/>
+      <line id="Line_103" data-name="Line 103" y2="193" transform="translate(75 -114.5)" fill="none" stroke="#fff" stroke-width="1" opacity="0.1"/>
+      <line id="Line_104" data-name="Line 104" y2="193" transform="translate(244 -114.5)" fill="none" stroke="#fff" stroke-width="1" opacity="0.1"/>
+      <path id="Path_81" data-name="Path 81" d="M0,192.5" transform="translate(131.5 -114.5)" fill="none" stroke="#fff" stroke-width="1" opacity="0.1"/>
+    </g>
+    <g id="Вертикальные_линии-2" data-name="Вертикальные линии" transform="translate(0 2665)" opacity="0.6">
+      <line id="Line_96" data-name="Line 96" y2="340" transform="translate(243)" fill="none" stroke="#fff" stroke-width="1" opacity="0.1"/>
+      <line id="Line_98-2" data-name="Line 98" y2="340.5" transform="translate(187.5)" fill="none" stroke="#fff" stroke-width="1" opacity="0.1"/>
+      <line id="Line_99-2" data-name="Line 99" y2="623" transform="translate(299)" fill="none" stroke="#fff" stroke-width="1" opacity="0.1"/>
+      <line id="Line_100-2" data-name="Line 100" y2="623" transform="translate(356)" fill="none" stroke="#fff" stroke-width="1" opacity="0.1"/>
+      <line id="Line_101-2" data-name="Line 101" y2="623" transform="translate(19)" fill="none" stroke="#fff" stroke-width="1" opacity="0.1"/>
+      <line id="Line_102-2" data-name="Line 102" y2="340.5" transform="translate(131.5)" fill="none" stroke="#fff" stroke-width="1" opacity="0.1"/>
+      <line id="Line_103-2" data-name="Line 103" y2="340.5" transform="translate(75)" fill="none" stroke="#fff" stroke-width="1" opacity="0.1"/>
+      <line id="Line_104-2" data-name="Line 104" y2="422" transform="translate(244 201)" fill="none" stroke="#fff" stroke-width="1" opacity="0.1"/>
+      <line id="Line_105" data-name="Line 105" y2="422" transform="translate(187.5 201)" fill="none" stroke="#fff" stroke-width="1" opacity="0.1"/>
+      <line id="Line_106" data-name="Line 106" y2="422" transform="translate(131.5 201)" fill="none" stroke="#fff" stroke-width="1" opacity="0.1"/>
+      <line id="Line_107" data-name="Line 107" y2="422" transform="translate(75 201)" fill="none" stroke="#fff" stroke-width="1" opacity="0.1"/>
+    </g>
+    <rect id="Rectangle_278" data-name="Rectangle 278" width="16" height="16" rx="2" transform="translate(237 2724)" fill="url(#radial-gradient)"/>
+    <rect id="Rectangle_279" data-name="Rectangle 279" width="16" height="16" rx="2" transform="translate(292 3450)" fill="url(#radial-gradient)"/>
+    <rect id="Rectangle_277" data-name="Rectangle 277" width="16" height="16" rx="2" transform="translate(179.5 2681)" fill="url(#radial-gradient)"/>
+    <rect id="Rectangle_275" data-name="Rectangle 275" width="16" height="16" rx="2" transform="translate(67 3418)" fill="url(#radial-gradient)"/>
+    <rect id="Rectangle_276" data-name="Rectangle 276" width="16" height="16" rx="2" transform="translate(124 3263)" fill="url(#radial-gradient)"/>
+  </g>
+</svg>

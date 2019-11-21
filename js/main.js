@@ -15,6 +15,11 @@ $(document).ready(function () {
     //     }, 1000);
     // });
 
+    $('.share__icon').click(function(e){
+        console.log(e);
+        $(this).parent().toggleClass('active');
+    })
+
     $('.burger').click(function(){
         $('.nav').addClass('active');
     })
