@@ -623,7 +623,7 @@ body {
     visibility: visible;
     opacity: 1;
     max-width: none;
-    position: relative;
+    /* position: relative; */
 }
 
 .portf__inner .acco__item {
