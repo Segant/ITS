@@ -61,12 +61,44 @@ $(document).ready(function () {
     }
 
     function accoMobile() {
-        $('.acco__item-head').click(function (e) {
-            $('.acco__item-head').removeClass('active');
-            $('.acco__item-head').next().removeClass('active');
-            $(this).addClass('active');
-            $(this).next().addClass('active');
-        })
+        
+        function init(){
+
+            /*
+            TODO: 
+                pure js,
+                set item width equals row width
+                check grid item offset, if item width > 15px(padding box) then move item to left side
+            */
+
+            
+
+            // set true width of gridRowWidth
+            // var gridRow = $('.grid-row').last();
+            // var gridRowWidth = gridRow.width();
+            // var rowOffset = gridRow.offset().left;
+            
+            // $('.portf .grid__item.acco__item-body').each(function(i , el){
+                
+            //     var gridItem = $(this);
+            //     var gridItemWidth = $(this).width()
+            //     var itemOffset = $(this).offset().left;
+            //     if (itemOffset > gridItemWidth) {
+            //         itemOffset = 15;
+            //     }
+            //     console.log();
+            // })
+
+            $('.acco__item-head').click(function(e) {
+                $('.acco__item-head').removeClass('active');
+                $('.acco__item-head').next().removeClass('active');
+                $(this).addClass('active');
+                $(this).next().addClass('active');
+
+            })
+        }
+
+        init();
     }
 
     if($(window).width() > 1300){

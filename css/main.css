@@ -622,6 +622,8 @@ body {
 .acco .acco__item-body.grid__item.active {
     visibility: visible;
     opacity: 1;
+    max-width: none;
+    position: relative;
 }
 
 .portf__inner .acco__item {
