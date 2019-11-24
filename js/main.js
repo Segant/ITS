@@ -64,40 +64,38 @@ $(document).ready(function () {
 
 
         function stretchAccoBodies(){
-            
             var gridRow = document.querySelector('.portf .grid-row');
             var accoBodies = document.querySelectorAll('.portf .acco__item-body.grid__item')
-    
-    
+
             // set width equals width gridRow
             for (let i = 0; i < accoBodies.length; i++) {
-    
                 var accoBody = accoBodies[i];
     
                 accoBody.style.width = gridRow.offsetWidth + 'px';
-    
-                console.dir(accoBody);
-            }
-    
-            function getCoords(elem) { // кроме IE8-
-                var box = elem.getBoundingClientRect();
-    
-                return {
-                    top: box.top + pageYOffset,
-                    left: box.left + pageXOffset
-                };
-    
             }
         }
 
-        // stretchAccoBodies();
+        stretchAccoBodies();
         
         function init(){
 
+            $.each($('.portf .acco__item-body.grid__item'), function (i, el) {
+
+                if (!($(this).show().offset().left === 15)){
+                    console.log('find');
+                    console.log($(this).css({
+                        // transform: 'translateX(-' + $('.portf .acco__item-head').last().width() + 'px)'
+                    }));
+                }
+
+                $(this).hide();
+            })
+
             $('.acco__item-head').click(function(e) {
                 $('.acco__item-head').removeClass('active');
-                $('.acco__item-head').next().removeClass('active');
+                $('.acco__item-head').next().hide().removeClass('active');
                 $(this).addClass('active');
+                $(this).next().show().offset().left = 150;
                 $(this).next().addClass('active');
 
             })
