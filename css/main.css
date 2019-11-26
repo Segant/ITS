@@ -1156,7 +1156,7 @@ input.error+.checkmark {
 }
 
 .nav {
-    position: absolute;
+    position: fixed;
     top: 50%;
     transform: translate(0, calc(-50% - (138px / 2)));
     text-align: right;
@@ -1264,6 +1264,10 @@ input.error+.checkmark {
 
 .hero__logo{
     display: none;
+}
+
+.js-dark-text {
+    color: #0f0f10;
 }
 
 

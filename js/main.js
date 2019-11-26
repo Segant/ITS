@@ -24,6 +24,11 @@ $(document).ready(function () {
         $('.nav').addClass('active');
     })
 
+    $('.nav').click(function(){
+        console.log('yo');
+        $(this).removeClass('active');
+    })
+
     $('.nav__link').click(function () {
         $('.nav__link').removeClass('active');
         $(this).addClass('active');
@@ -37,20 +42,27 @@ $(document).ready(function () {
         }, 1000);
     });
 
-    // function tabs(wrapper){
-    //     wrapper = $(wrapper) || $(".wrapper");
-    //     var tab = wrapper.find(".tab");
-    //     $(".tab_item").not(":first").hide();
-    //     tab.click(function () {
-    //         tab.removeClass("active").eq($(this).index()).addClass("active");
-    //         $(".tab_item").hide().eq($(this).index()).fadeIn()
-    //     }).eq(0).addClass("active");
-    // }
+    $(window).on('scroll', function () {
+        $('.nav-el').each(function () {
+            if ($(window).scrollTop() + 300 >= $(this).offset().top + 300) {
+                var id = $(this).attr('id');
 
-    // tabs(".tabs-wrap");
+                if ($(this).hasClass('js-black-text')){
+                    $('.nav a[href="#' + id + '"]').parent().parent().addClass('js-dark-text');
+                } else{
+                    $('.nav a[href="#' + id + '"]').parent().parent().removeClass('js-dark-text');
+                }
+                
+                $('.nav a').removeClass('active');
+                $('.nav a[href="#' + id + '"]').addClass('active');
+            }
+        });
+    });
+
 
     function accoDesktop() {
         $('.acco__item-head').click(function (e) {
+
             $('.acco').css('margin-bottom', 20);
             $('.acco__item-head').removeClass('active');
             $('.acco__item-head').next().removeClass('active');
@@ -109,25 +121,6 @@ $(document).ready(function () {
     } else{
         accoMobile();
     }
-
-
-
-    function mobileMenu() {
-        $('.burger').click(function (e) {
-            $('.header-nav-wrap').addClass('active');
-            $('.main-bg').addClass('mobile-blur');
-            $('body').addClass('no-scrolling');
-        })
-
-        $('.close-menu').click(function (e) {
-            $('.header-nav-wrap').removeClass('active');
-            $('.main-bg').removeClass('mobile-blur');
-            $('body').removeClass('no-scrolling');
-        })
-
-    }
-    mobileMenu();
-
 
 
     function checkValidate() {
