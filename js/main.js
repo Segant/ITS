@@ -158,9 +158,6 @@ $(document).ready(function () {
 
             var filterValue = $(this).data().filter;
     
-            
-            console.log(filterValue);
-
             $.each($('.portf__inner .acco__item'), function(i , el){
 
                 if (filterValue === $(this).data().value) {
@@ -174,7 +171,6 @@ $(document).ready(function () {
                 }
             })
 
-            console.log($('.portf__inner .acco__item').data().value);
             // $('.portf__inner .acco__item').addClass()
         })
     }
