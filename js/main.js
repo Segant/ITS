@@ -34,7 +34,7 @@ $(document).ready(function () {
         $(this).addClass('active');
     })
 
-    $(document).on('click', 'a[href^="#"]', function (event) {
+    $(document).on('click', 'a.nav__link[href^="#"]', function (event) {
         event.preventDefault();
 
         $('html, body').animate({
@@ -44,7 +44,7 @@ $(document).ready(function () {
 
     $(window).on('scroll', function () {
         $('.nav-el').each(function () {
-            if ($(window).scrollTop() - 100 >= $(this).offset().top - $('.nav').height() / 2) {
+            if ($(window).scrollTop() >= $(this).offset().top - 200) {
                 var id = $(this).attr('id');
 
                 if ($(this).hasClass('js-black-text')) {
@@ -150,6 +150,36 @@ $(document).ready(function () {
         accoMobile();
     }
 
+
+    function filter() {
+        $('.filters .filters__item').click(function(){
+            $('.filters .filters__item').removeClass('active')
+            $(this).toggleClass('active')
+
+            var filterValue = $(this).data().filter;
+    
+            
+            console.log(filterValue);
+
+            $.each($('.portf__inner .acco__item'), function(i , el){
+
+                if (filterValue === $(this).data().value) {
+                    $(this).fadeIn();
+                } else {
+                    $(this).fadeOut();
+                }
+
+                if (filterValue === 'ALL') {
+                    $(this).fadeIn();
+                }
+            })
+
+            console.log($('.portf__inner .acco__item').data().value);
+            // $('.portf__inner .acco__item').addClass()
+        })
+    }
+
+    filter();
 
     function checkValidate() {
         var form = $('form');
