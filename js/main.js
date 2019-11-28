@@ -15,16 +15,16 @@ $(document).ready(function () {
     //     }, 1000);
     // });
 
-    $('.share__icon').click(function(e){
+    $('.share__icon').click(function (e) {
         console.log(e);
         $(this).parent().toggleClass('active');
     })
 
-    $('.burger').click(function(){
+    $('.burger').click(function () {
         $('.nav').addClass('active');
     })
 
-    $('.nav').click(function(){
+    $('.nav').click(function () {
         console.log('yo');
         $(this).removeClass('active');
     })
@@ -44,15 +44,15 @@ $(document).ready(function () {
 
     $(window).on('scroll', function () {
         $('.nav-el').each(function () {
-            if ($(window).scrollTop() + 300 >= $(this).offset().top + 300) {
+            if ($(window).scrollTop() - 100 >= $(this).offset().top - $('.nav').height() / 2) {
                 var id = $(this).attr('id');
 
-                if ($(this).hasClass('js-black-text')){
+                if ($(this).hasClass('js-black-text')) {
                     $('.nav a[href="#' + id + '"]').parent().parent().addClass('js-dark-text');
-                } else{
+                } else {
                     $('.nav a[href="#' + id + '"]').parent().parent().removeClass('js-dark-text');
                 }
-                
+
                 $('.nav a').removeClass('active');
                 $('.nav a[href="#' + id + '"]').addClass('active');
             }
@@ -63,62 +63,90 @@ $(document).ready(function () {
     function accoDesktop() {
         $('.acco__item-head').click(function (e) {
 
-            $('.acco').css('margin-bottom', 20);
-            $('.acco__item-head').removeClass('active');
-            $('.acco__item-head').next().removeClass('active');
-            $(this).addClass('active');
-            $(this).next().addClass('active');
-            $(this).parent().parent().css('margin-bottom', $(this).next().outerHeight() + 44);
+            
+            if ($(this).hasClass('active')){
+                
+                $('.acco').css('margin-bottom', 20);
+                $('.acco__item-head').removeClass('active');
+                $('.acco__item-head').next().removeClass('active');
+                $(this).removeClass('active');
+                $(this).next().removeClass('active');
+
+            } else {
+
+                $('.acco').css('margin-bottom', 20);
+                $('.acco__item-head').removeClass('active');
+                $('.acco__item-head').next().removeClass('active');
+
+                $(this).addClass('active');
+                $(this).next().addClass('active');
+                $(this).parent().parent().css('margin-bottom', $(this).next().outerHeight() + 44);
+                
+            }
+
+
+
         })
     }
 
     function accoMobile() {
 
-
-        function stretchAccoBodies(){
+        function stretchAccoBodies() {
             var gridRow = document.querySelector('.portf .grid-row');
             var accoBodies = document.querySelectorAll('.portf .acco__item-body.grid__item')
 
             // set width equals width gridRow
             for (let i = 0; i < accoBodies.length; i++) {
                 var accoBody = accoBodies[i];
-    
+
                 accoBody.style.width = gridRow.offsetWidth + 'px';
             }
         }
 
         stretchAccoBodies();
-        
-        function init(){
 
-            $.each($('.portf .acco__item-body.grid__item'), function (i, el) {
+        function init() {
 
-                if (!($(this).show().offset().left === 15)){
-                    console.log('find');
-                    console.log($(this).css({
-                        // transform: 'translateX(-' + $('.portf .acco__item-head').last().width() + 'px)'
-                    }));
+            // $.each($('.portf .acco__item-body.grid__item'), function (i, el) {
+
+            //     if (!($(this).show().offset().left === 15)) {
+            //         console.log('find');
+            //         console.log($(this).css({
+            //             // transform: 'translateX(-' + $('.portf .acco__item-head').last().width() + 'px)'
+            //         }));
+            //     }
+
+            //     $(this).hide();
+            // })
+
+
+            $('.acco__item-head').click(function (e) {
+
+                if ($(this).hasClass('active')) {
+    
+                    $('.acco__item-head').removeClass('active');
+                    $('.acco__item-head').next().removeClass('active');
+                    $(this).removeClass('active');
+                    $(this).next().removeClass('active');
+    
+                } else {
+    
+                    $('.acco__item-head').removeClass('active');
+                    $('.acco__item-head').next().removeClass('active');
+    
+                    $(this).addClass('active');
+                    $(this).next().addClass('active');
+    
                 }
-
-                $(this).hide();
-            })
-
-            $('.acco__item-head').click(function(e) {
-                $('.acco__item-head').removeClass('active');
-                $('.acco__item-head').next().hide().removeClass('active');
-                $(this).addClass('active');
-                $(this).next().show().offset().left = 150;
-                $(this).next().addClass('active');
-
             })
         }
 
         init();
     }
 
-    if($(window).width() > 1300){
+    if ($(window).width() > 1300) {
         accoDesktop();
-    } else{
+    } else {
         accoMobile();
     }
 
