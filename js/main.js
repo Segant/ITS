@@ -1,19 +1,4 @@
 $(document).ready(function () {
-    // $('.slider').slick({
-    //     infinite: false,
-    //     draggable: false,
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     // adaptiveHeight: true,
-    //     prevArrow: "<a class='slick-prev'>Назад</a>",
-    //     nextArrow: "<a class='btn slick-next'>Следующий вопрос</a>"
-    // });
-    // $(".nav__link").click(function () {
-    //     $('.nav__link').addClass('active');
-    //     $('html, body').animate({
-    //         // scrollTop: $(".footer").offset().top
-    //     }, 1000);
-    // });
 
     $('.share__icon').click(function (e) {
         console.log(e);
@@ -44,12 +29,16 @@ $(document).ready(function () {
 
     $(window).on('scroll', function () {
         $('.nav-el').each(function () {
-            if ($(window).scrollTop() >= $(this).offset().top - 200) {
+            if ($(window).scrollTop() >= $(this).offset().top - 400) {
                 var id = $(this).attr('id');
 
                 if ($(this).hasClass('js-black-text')) {
                     $('.nav a[href="#' + id + '"]').parent().parent().addClass('js-dark-text');
-                } else {
+                }
+                // else if ($(this).offset().top >= $('.nav-el').last().offset().top) {
+                //     $('.nav a[href="#' + id + '"]').parent().parent().removeClass('js-dark-text');
+                // }
+                else {
                     $('.nav a[href="#' + id + '"]').parent().parent().removeClass('js-dark-text');
                 }
 
