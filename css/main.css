@@ -1270,6 +1270,38 @@ input.error+.checkmark {
     color: #0f0f10;
 }
 
+.article__back{
+    display: none;
+}
+
+.arcticles .acco__item {
+    margin-right: 20px;
+}
+
+.arcticles .grid__item {
+    margin-right: 0px;
+    transition: none;
+}
+
+
+.arcticles .acco .grid__item.active {
+    max-width: 700px;
+    /* margin-right: 20px; */
+}
+
+.arcticles .acco .acco__item.active {
+    max-width: 700px;
+    /* margin-right: 20px; */
+}
+
+.acco__item-head.active .arcticle__face{
+    display: none;
+}
+
+.acco__item-head.active .article__back {
+    display: block;
+}
+
 
 @media(max-width:1560px) {
 
@@ -1447,6 +1479,16 @@ input.error+.checkmark {
 
 
 @media(max-width:1000px) {
+
+    .arcticles .acco .grid__item.active {
+        max-width: 100%;
+        /* margin-right: 20px; */
+    }
+
+    .arcticles .acco .acco__item.active {
+        max-width: 100%;
+        /* margin-right: 20px; */
+    }
 
     .grid__item{
         min-height: 158px;

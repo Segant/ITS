@@ -48,6 +48,17 @@ $(document).ready(function () {
         });
     });
 
+    function articleSwitch () {
+        $('.arcticles .acco__item-head').click(function(){
+            // $('.arcticles .acco__item-head').parent().parent().toggleClass('active');
+            // $('.arcticles .acco__item-head').parent().toggleClass('active');
+            $(this).parent().parent().toggleClass('active');
+            $(this).parent().toggleClass('active');
+        })
+    }
+
+    articleSwitch();
+
 
     function accoDesktop() {
         $('.acco__item-head').click(function (e) {
