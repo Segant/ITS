@@ -1480,6 +1480,14 @@ input.error+.checkmark {
 
 @media(max-width:1000px) {
 
+    .hero__inner{
+            transform: translate(-50%, calc(-14% - (138px / 2)));
+    }
+
+    .section-hero{
+        height: 75vh;
+    }
+
     .hero__logo {
         display: none;
     }
