@@ -710,7 +710,9 @@ body {
 }
 
 
-
+.hero__logo--mob{
+    display: none;
+}
 
 
 
@@ -1262,9 +1264,7 @@ input.error+.checkmark {
     margin-right: 0;
 }
 
-.hero__logo{
-    display: none;
-}
+
 
 .js-dark-text {
     color: #0f0f10;
@@ -1479,6 +1479,10 @@ input.error+.checkmark {
 
 
 @media(max-width:1000px) {
+
+    .hero__logo {
+        display: none;
+    }
 
     .arcticles .acco .grid__item.active {
         max-width: 100%;

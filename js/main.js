@@ -19,7 +19,7 @@ $(document).ready(function () {
         $(this).addClass('active');
     })
 
-    $(document).on('click', 'a.nav__link[href^="#"]', function (event) {
+    $(document).on('click', 'a.nav__link[href^="#"] , .hero__btn', function (event) {
         event.preventDefault();
 
         $('html, body').animate({
