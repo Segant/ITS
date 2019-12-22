@@ -1798,6 +1798,7 @@ input.error+.checkmark {
         opacity: 1;
         visibility: visible;
         transition: all .3s ease;
+        z-index: 1;
     }
 
     .socials__link{
