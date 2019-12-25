@@ -1281,11 +1281,13 @@ input.error+.checkmark {
 .arcticles .grid__item {
     margin-right: 0px;
     transition: none;
+    transition: all .3s ease;
 }
 
 
 .arcticles .acco .grid__item.active {
     max-width: 700px;
+    transition: all .3s ease;
     /* margin-right: 20px; */
 }
 
