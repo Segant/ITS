@@ -1300,9 +1300,22 @@ input.error+.checkmark {
     display: none;
 }
 
+.acco__item-head .article__back {
+}
+
 .acco__item-head.active .article__back {
     display: block;
 }
+
+/* .arcticles .acco .grid__item{
+    color: transparent;
+
+} */
+
+/* .arcticles .acco .grid__item.active{
+    
+    color: #0F0F0F;
+} */
 
 
 @media(max-width:1560px) {
@@ -1726,7 +1739,7 @@ input.error+.checkmark {
     }
 
     .filters {
-        width: 200%;
+       
     }
 
     
