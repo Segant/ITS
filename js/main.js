@@ -19,6 +19,10 @@ $(document).ready(function () {
         $(this).addClass('active');
     })
 
+    $('.btn-modal').click(function(){
+        
+    })
+
     $(document).on('click', 'a.nav__link[href^="#"] , .hero__btn', function (event) {
         event.preventDefault();
 
