@@ -20,7 +20,7 @@ $(document).ready(function () {
     })
 
     $('.btn-modal').click(function(){
-        
+        $('.modal-overlay').removeClass('modal-overlay--active');
     })
 
     $(document).on('click', 'a.nav__link[href^="#"] , .hero__btn', function (event) {
