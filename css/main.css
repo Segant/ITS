@@ -1336,7 +1336,7 @@ span.error::after{
 
 .arcticles .acco .grid__item.active {
     max-width: 700px;
-    transition: all .3s ease;
+    transition: all .6s ease;
     /* margin-right: 20px; */
 }
 
@@ -1349,10 +1349,14 @@ span.error::after{
     display: none;
 }
 
-.acco__item-head .article__back {}
+.acco__item-head .article__back {
+    opacity: 0;
+    transition: all .5s ease;
+}
 
 .acco__item-head.active .article__back {
     display: block;
+    opacity: 1;
 }
 
 /* .arcticles .acco .grid__item{
