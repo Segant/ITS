@@ -1724,8 +1724,14 @@ span.error::after{
 
 @media(max-width:768px) {
 
+    .filters{
+        display: flex;
+    }
+
     .filters__item {
         font-size: 14px;
+        display: flex;
+        flex-shrink: 0;
     }
 
     .portf__inner .acco__item {
