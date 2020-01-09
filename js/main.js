@@ -23,6 +23,8 @@ $(document).ready(function () {
         $('.modal-overlay').removeClass('modal-overlay--active');
     })
 
+    
+
     $(document).on('click', 'a.nav__link[href^="#"] , .hero__btn', function (event) {
         event.preventDefault();
 
@@ -214,8 +216,14 @@ $(document).ready(function () {
                 errorElement: 'span',
                 errorPlacement: function (error, element) {
                     var placement = $(element).data('error');
+
+                    $('span.error').click(function (e) {
+                        $(this).fadeOut(300);
+                    });
+
                     if (placement) {
                         $(placement).append(error);
+
                     } else {
                         error.insertBefore(element);
                     }

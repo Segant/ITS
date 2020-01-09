@@ -1017,25 +1017,25 @@ textarea {
 
 
 input.error+.checkmark {
-    
+
     border-color: #ff6565;
 }
 
-input.error{
-        color: transparent;
-    border: solid 1px #ff6565;
+input.error {
+    /* color: transparent; */
 }
 
 input.error::placeholder {
-    color: #fff;
+    /* color: #fff; */
 }
 
 
-.input-wrap{
+.input-wrap {
     position: relative;
 }
 
-span.error{
+span.error {
+    border: solid 1px #ff6565;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -1044,18 +1044,29 @@ span.error{
     padding-left: 38px;
     line-height: 52px;
     color: #ff6565;
+    cursor: pointer;
+    user-select: none;
+    background: #fff;
+    z-index: 1;
+        border-radius: 5px;
 }
 
-span.error::after{
+span.error::after {
     content: '';
     width: 26px;
     height: 24px;
     background: url('../img/sign.svg') center no-repeat;
     background-size: contain;
     position: absolute;
-    top: 0;bottom: 0;
+    top: 0;
+    bottom: 0;
     right: 10px;
     margin: auto;
+}
+
+.checkbox span.error {
+    border: none;
+    background: none;
 }
 
 .input-wrap--ch .error {
@@ -1390,21 +1401,21 @@ span.error::after{
     background: rgba(19, 17, 17, 0.97);
 }
 
-.modal_thx{
+.modal_thx {
     position: absolute;
     top: 50%;
     left: 50%;
     margin: auto;
-      color: #0f0f10;
-      background: #fff;
-      transform: translate(-50%,-50%);
-      font-size: 18px;
-      max-width: 556px;
-      width: 100%;
-      border-radius: 5px;
+    color: #0f0f10;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    max-width: 556px;
+    width: 100%;
+    border-radius: 5px;
 }
 
-.modal_thx .modal__inner{
+.modal_thx .modal__inner {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1413,11 +1424,11 @@ span.error::after{
     padding-bottom: 45px;
 }
 
-.modal_thx .modal__title{
+.modal_thx .modal__title {
     margin-bottom: 30px;
 }
 
-.btn-modal{
+.btn-modal {
     border-radius: 5px;
     background-color: #30d0a4;
     text-align: center;
@@ -1428,7 +1439,7 @@ span.error::after{
 }
 
 .btn-modal:focus,
-.btn-modal:hover{
+.btn-modal:hover {
     color: #fff;
 }
 
@@ -1724,7 +1735,7 @@ span.error::after{
 
 @media(max-width:768px) {
 
-    .filters{
+    .filters {
         display: flex;
     }
 
@@ -1785,6 +1796,7 @@ span.error::after{
         margin-bottom: 25px;
         font-size: 18px;
         line-height: 1.22;
+        font-weight: 500;
     }
 
     .form-row {
@@ -1811,7 +1823,7 @@ span.error::after{
         padding-right: 25px;
     }
 
-    span.error{
+    span.error {
         padding-left: 25px;
     }
 
@@ -1954,4 +1966,14 @@ span.error::after{
     .socials__link--in {
         background-image: url(../img/socs/in2.svg);
     }
+
+    .grid__item p {
+        font-size: 12px;
+    }
+
+    .checkbox-text {
+        font-size: 12px;
+    }
+
+    .title-dec {}
 }
