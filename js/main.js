@@ -57,24 +57,55 @@ $(document).ready(function () {
     });
 
     function articleSwitch() {
-        $('.arcticles .acco__item-head').click(function () {
-            // $('.arcticles .acco__item-head').parent().parent().toggleClass('active');
-            // $('.arcticles .acco__item-head').parent().toggleClass('active');
-            $(this).parent().parent().toggleClass('active');
 
-            $(this).parent().toggleClass('active',2000).promise().done(function () {
-                console.log('a');
-            });
-            
-            // if (el.hasClass('active')) {
-            //     el.addClass('text');
-            // }
-            // $(this).parent()
-        })
+        function desktop() {
+            $('.arcticles .acco__item-head').click(function () {
+
+                var self = $(this);
+                $('.arcticles .acco__item').removeClass('active');
+                $('.arcticles .acco__item').removeClass('text');
+                if (self.parent().hasClass('active')) {
+                    $('.arcticles .acco__item').removeClass('active');
+                    $('.arcticles .acco__item').removeClass('text');
+                }
+
+                setTimeout(function () {
+                    console.log(self);
+                    self.toggleClass('text')
+                }, 1200)
+
+            })
+
+        }
+        
+        function mobile(){
+
+            $('.arcticles .acco__item-head').click(function () {
+
+                var self = $(this);
+                $('.arcticles .acco__item').removeClass('active');
+                $('.arcticles .acco__item').removeClass('text');
+                if (self.parent().hasClass('active')) {
+                    $('.arcticles .acco__item').removeClass('active');
+                    $('.arcticles .acco__item').removeClass('text');
+                }
+
+            })
+        }
+
+        
+
+        if ($(window).width() > 1300) {
+            desktop();
+        } else {
+            mobile();
+        }
     }
 
     articleSwitch();
 
+
+    
 
     function accoDesktop() {
         $('.acco__item-head').click(function (e) {
@@ -104,6 +135,8 @@ $(document).ready(function () {
 
         })
     }
+
+    
 
     function accoMobile() {
 

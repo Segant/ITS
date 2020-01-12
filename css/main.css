@@ -1324,9 +1324,6 @@ span.error::after {
     color: #0f0f10;
 }
 
-.article__back {
-    display: none;
-}
 
 .arcticles .acco__item {
     margin-right: 20px;
@@ -1341,8 +1338,12 @@ span.error::after {
 
 .arcticles .acco .grid__item.active {
     max-width: 700px;
-    transition: all .6s ease;
+    transition: all 1.2s ease;
     /* margin-right: 20px; */
+}
+
+.arcticles .acco .grid__item{
+    transition: all 1.4s ease;
 }
 
 .arcticles .acco .acco__item.active {
@@ -1356,7 +1357,11 @@ span.error::after {
 
 .acco__item-head .article__back {
     opacity: 0;
-    transition: all .5s ease;
+    /* transition: all .5s ease; */
+}
+
+.acco__item .article__back{
+    /* display: none; */
 }
 
 .acco__item-head.active .article__back {
@@ -1364,7 +1369,8 @@ span.error::after {
     opacity: 0;
 }
 
-.acco__item.text .article__back {
+
+.acco__item-head.active.text .article__back {
     opacity: 1;
 }
 
@@ -1488,6 +1494,8 @@ span.error::after {
 }
 
 @media(max-width:1800px) {
+
+
 
     .burger {
         display: block;
@@ -1666,7 +1674,9 @@ span.error::after {
         /* background-color: transparent; */
     }
 
-    
+    .arcticles .acco .grid__item.active .article__back{
+        opacity: 1;
+    }
 
 }
 
