@@ -594,11 +594,7 @@ body {
     box-shadow: 0 24px 48px 0 rgba(0, 0, 0, 0.15);
 }
 
-.acco .grid__item:hover .btn {
-    color: #fff;
-    border: solid 1px #30d0a4;
-    background: #30d0a4;
-}
+
 
 
 .acco .acco__item-body.grid__item {
@@ -650,6 +646,10 @@ body {
     left: 21px;
     margin-bottom: 25px;
     font-weight: normal;
+}
+
+.grid__item .arcticle__face h2 {
+    max-width: 170px;
 }
 
 .grid__item p {
@@ -809,10 +809,6 @@ body {
     cursor: pointer;
 }
 
-.portf__inner .grid__item:hover .btn-small {
-    background: #30d0a4;
-    border: none;
-}
 
 .portf__inner .grid__item:after {
     content: '';
@@ -879,19 +875,16 @@ body {
 }
 
 
-.grid__item.active .btn-small,
-.btn-small:hover,
+/* .grid__item.active .btn-small,
+
 .btn-small.active:hover,
 .grid__item:hover .btn-small {
     background: #30d0a4;
     border: none;
-}
+} */
 
 /* #30d0a4 */
-.grid__item.active .btn-small::after,
-.btn-small:hover::after,
-.btn-small.active:hover::after,
-.grid__item:hover .btn-small::after {
+.grid__item.active .btn-small::after {
     transform: rotate(270deg);
 }
 
@@ -1368,6 +1361,10 @@ span.error::after {
 
 .acco__item-head.active .article__back {
     display: block;
+    opacity: 0;
+}
+
+.acco__item.text .article__back {
     opacity: 1;
 }
 
@@ -1449,6 +1446,22 @@ span.error::after {
     color: #fff;
 }
 
+.share {
+    position: fixed;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: right;
+    max-width: 236px;
+    width: 100%;
+    z-index: 1;
+    right: 0;
+}
+
+.acco .grid__item.active .btn {
+    color: #fff;
+    border: solid 1px #30d0a4;
+    background: #30d0a4;
+}
 
 @media(max-width:1560px) {
 
@@ -1629,10 +1642,17 @@ span.error::after {
         /* background-color: transparent; */
     }
 
+    
+
 }
 
 
 @media(max-width:1000px) {
+
+    .share{
+        position: static;
+        transform: none;
+    }
 
     .hero__inner {
         transform: translate(-50%, calc(-14% - (138px / 2)));
@@ -1743,6 +1763,12 @@ span.error::after {
         right: 30px;
     }
 
+
+    .grid__item:hover .btn-small::after{
+            /* transform: rotate(90deg); */
+    }
+
+    
 }
 
 
@@ -1809,7 +1835,7 @@ span.error::after {
         margin-bottom: 25px;
         font-size: 18px;
         line-height: 1.22;
-        font-weight: 500;
+        font-weight: 600;
     }
 
     .form-row {
@@ -1986,6 +2012,7 @@ span.error::after {
 
     .checkbox-text {
         font-size: 12px;
+        font-weight: 100;
     }
 
     .title-dec {}

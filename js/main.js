@@ -60,9 +60,12 @@ $(document).ready(function () {
             // $('.arcticles .acco__item-head').parent().toggleClass('active');
             $(this).parent().parent().toggleClass('active');
 
-            var el = $(this).parent().toggleClass('active')
+            $(this).parent().toggleClass('active',2000).promise().done(function () {
+                console.log('a');
+            });
+            
             // if (el.hasClass('active')) {
-            //     el.toggleClass('text');
+            //     el.addClass('text');
             // }
             // $(this).parent()
         })
