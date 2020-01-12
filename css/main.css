@@ -545,6 +545,7 @@ body {
 
 .grid-row {
     display: flex;
+    flex-wrap: wrap;
     transition: all .3s ease;
 }
 
@@ -627,6 +628,7 @@ body {
     width: 100%;
     max-width: 268px;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .portf__inner .acco__item .acco__item-body::after {
@@ -843,9 +845,9 @@ body {
     position: absolute;
 }
 
-.portf__inner .grid-row {
+/*.portf__inner .grid-row {
     margin-bottom: 20px;
-}
+}*/
 
 
 .btn-small {
@@ -1459,7 +1461,7 @@ span.error::after {
     text-align: right;
     max-width: 236px;
     width: 100%;
-    z-index: 0;
+    z-index: 1;
     right: 0;
 }
 
@@ -1493,7 +1495,7 @@ span.error::after {
     background-image: url(../img/socs/in2.svg);
 }
 
-@media(max-width:1800px) {
+@media(max-width:1560px) {
 
 
 
@@ -1623,7 +1625,11 @@ span.error::after {
 
     .portf__inner .acco__item--988 {
         max-width: 100%;
-        order: -1;
+        /*order: -1;*/
+    }
+
+    .portf__inner .acco__item--last {
+        order: 1;
     }
 
     .arcticles .acco__item {

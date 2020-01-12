@@ -229,11 +229,11 @@
                         <h2 class="portf__title title-dec">Проекты</h2>
                         <div class="portf__filters">
                             <div class="filters">
-                                <a href="#!" data-filter='ALL' class="filters__item active">Все</a>
-                                <a href="#!" data-filter='CRM' class="filters__item">CRM</a>
-                                <a href="#!" data-filter='National consumer promo' class="filters__item">National
+                                <a href="#!" data-filter='all' class="control filters__item active">Все</a>
+                                <a href="#!" data-filter='.crm' class="control filters__item">CRM</a>
+                                <a href="#!" data-filter='.ncp' class="control filters__item">National
                                     consumer promo</a>
-                                <a href="#!" data-filter='Мобильные приложения' class="filters__item">Мобильные
+                                <a href="#!" data-filter='.mobile' class="control filters__item">Мобильные
                                     приложения</a>
                             </div>
                         </div>
@@ -241,8 +241,8 @@
                     <div class="portf__inner">
                         <div class="">
 
-                            <div class="grid-row acco">
-                                <div class="acco__item acco__item--700" data-value='CRM'>
+                            <div class="grid-row acco filter-container">
+                                <div class="mix acco__item acco__item--700 crm">
                                     <div class="grid__item grid__item--700 acco__item-head"
                                         style="background-image: url('img/1.jpg');">
                                         <h2>CRM / ERP системы</h2>
@@ -266,7 +266,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="acco__item">
+                                <div class="mix acco__item">
                                     <div class="grid__item acco__item-head" style="background-image: url('img/2.png');">
                                         <h2>КОБРЕНДИНГОВОЕ
                                             ПРОМО ГАЗПРОМНЕФТЬ
@@ -278,7 +278,7 @@
                                     </div>
                                 </div>
 
-                                <div class="acco__item m0" data-value='Мобильные приложения'>
+                                <div class="mix acco__item m0 mobile">
                                     <div class="grid__item acco__item-head m0"
                                         style="background-image: url('img/3.png');">
                                         <h2>МОБИЛЬНОЕ
@@ -290,10 +290,8 @@
                                         3
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="grid-row acco">
-                                <div class="acco__item">
+                                <div class="mix acco__item acco__item--last">
 
                                     <div class="grid__item acco__item-head "
                                         style="background-image: url('img/4.png');">
@@ -307,7 +305,7 @@
                                     </div>
 
                                 </div>
-                                <div class="acco__item acco__item--988 m0" data-value='National consumer promo'>
+                                <div class="mix acco__item acco__item--988 m0 ncp">
 
                                     <div class="grid__item acco__item-head grid__item--988 m0"
                                         style="background-image: url('img/5.jpg');">
@@ -322,6 +320,37 @@
 
                                 </div>
                             </div>
+
+                            <!-- <div class="grid-row acco">
+                                <div class="mix acco__item">
+
+                                    <div class="grid__item acco__item-head "
+                                        style="background-image: url('img/4.png');">
+                                        <h2>ЮБИЛЕЙНОЕ
+                                            «ДЕЛИСЬ ТЕПЛОМ!»</h2>
+                                        <a class="btn btn-small">Подробнее</a>
+
+                                    </div>
+                                    <div class="grid__item acco__item-body">
+                                        4
+                                    </div>
+
+                                </div>
+                                <div class="mix acco__item acco__item--988 m0 ncp">
+
+                                    <div class="grid__item acco__item-head grid__item--988 m0"
+                                        style="background-image: url('img/5.jpg');">
+                                        <h2>NATIONAL CONSUMER
+                                            PROMO ДЛЯ MILKA</h2>
+                                        <a class="btn btn-small">Подробнее</a>
+
+                                    </div>
+                                    <div class="grid__item acco__item-body">
+                                        5
+                                    </div>
+
+                                </div>
+                            </div> -->
 
                         </div>
                     </div>
@@ -437,6 +466,12 @@
     <script src="libs/jquery.validate.min.js"></script>
     <script src="libs/jquery.inputmask.bundle.min.js"></script>
     <script src="libs/messages_ru.min.js"></script>
+    <script src="libs/mixitup.min.js"></script>
+    <script>
+        var containerEl = document.querySelector('.filter-container');
+
+        var mixer = mixitup(containerEl);
+    </script>
     <script src="js/main.js"></script>
 </body>
 
