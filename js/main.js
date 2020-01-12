@@ -57,55 +57,24 @@ $(document).ready(function () {
     });
 
     function articleSwitch() {
+        $('.arcticles .acco__item-head').click(function () {
+            // $('.arcticles .acco__item-head').parent().parent().toggleClass('active');
+            // $('.arcticles .acco__item-head').parent().toggleClass('active');
+            $(this).parent().parent().toggleClass('active');
 
-        function desktop() {
-            $('.arcticles .acco__item-head').click(function () {
-
-                var self = $(this);
-                $('.arcticles .acco__item-head').removeClass('active');
-                $('.arcticles .acco__item-head').removeClass('text');
-                if (self.parent().hasClass('active')) {
-                    $('.arcticles .acco__item-head').removeClass('active');
-                    $('.arcticles .acco__item-head').removeClass('text');
-                }
-
-                setTimeout(function () {
-                    console.log(self);
-                    self.toggleClass('text')
-                }, 1200)
-
-            })
-
-        }
-        
-        function mobile(){
-
-            $('.arcticles .acco__item-head').click(function () {
-
-                var self = $(this);
-                $('.arcticles .acco__item').removeClass('active');
-                $('.arcticles .acco__item').removeClass('text');
-                if (self.parent().hasClass('active')) {
-                    $('.arcticles .acco__item').removeClass('active');
-                    $('.arcticles .acco__item').removeClass('text');
-                }
-
-            })
-        }
-
-        
-
-        if ($(window).width() > 1300) {
-            desktop();
-        } else {
-            mobile();
-        }
+            $(this).parent().toggleClass('active',2000).promise().done(function () {
+                console.log('a');
+            });
+            
+            // if (el.hasClass('active')) {
+            //     el.addClass('text');
+            // }
+            // $(this).parent()
+        })
     }
 
     articleSwitch();
 
-
-    
 
     function accoDesktop() {
         $('.acco__item-head').click(function (e) {
@@ -113,21 +82,28 @@ $(document).ready(function () {
 
             if ($(this).hasClass('active')) {
 
-                $('.acco').css('margin-bottom', 20);
+                // $('.acco').css('margin-bottom', 20);
                 $('.acco__item-head').removeClass('active');
                 $('.acco__item-head').next().removeClass('active');
                 $(this).removeClass('active');
                 $(this).next().removeClass('active');
+                // $('.acco__item').css('margin-bottom', 20);
+                $('.acco__item').animate({
+                    marginBottom: '20px'
+                },500);
 
             } else {
 
-                $('.acco').css('margin-bottom', 20);
+                // $('.acco').css('margin-bottom', 20);
                 $('.acco__item-head').removeClass('active');
                 $('.acco__item-head').next().removeClass('active');
 
                 $(this).addClass('active');
                 $(this).next().addClass('active');
-                $(this).parent().parent().css('margin-bottom', $(this).next().outerHeight() + 44);
+                $('.acco__item').css('margin-bottom', 20);
+                $(this).parent().animate({
+                    marginBottom: $(this).next().outerHeight() + 44+'px'
+                },500);
 
             }
 
@@ -135,8 +111,6 @@ $(document).ready(function () {
 
         })
     }
-
-    
 
     function accoMobile() {
 
@@ -205,20 +179,20 @@ $(document).ready(function () {
             $('.filters .filters__item').removeClass('active')
             $(this).toggleClass('active')
 
-            var filterValue = $(this).data().filter;
+            // var filterValue = $(this).data().filter;
 
-            $.each($('.portf__inner .acco__item'), function (i, el) {
+            // $.each($('.portf__inner .acco__item'), function (i, el) {
 
-                if (filterValue === $(this).data().value) {
-                    $(this).fadeIn();
-                } else {
-                    $(this).fadeOut();
-                }
+            //     if (filterValue === $(this).data().value) {
+            //         $(this).fadeIn();
+            //     } else {
+            //         $(this).fadeOut();
+            //     }
 
-                if (filterValue === 'ALL') {
-                    $(this).fadeIn();
-                }
-            })
+            //     if (filterValue === 'ALL') {
+            //         $(this).fadeIn();
+            //     }
+            // })
 
             // $('.portf__inner .acco__item').addClass()
         })
