@@ -1571,6 +1571,10 @@ span.error::after {
         flex-wrap: wrap;
     }
 
+    .arcticles .grid-row{
+        flex-wrap: wrap;
+    }
+
     .acco .grid__item {
         margin-bottom: 20px;
     }
