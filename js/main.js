@@ -19,11 +19,11 @@ $(document).ready(function () {
         $(this).addClass('active');
     })
 
-    $('.btn-modal').click(function(){
+    $('.btn-modal').click(function () {
         $('.modal-overlay').removeClass('modal-overlay--active');
     })
 
-    
+
 
     $(document).on('click', 'a.nav__link[href^="#"] , .hero__btn', function (event) {
         event.preventDefault();
@@ -54,12 +54,17 @@ $(document).ready(function () {
         });
     });
 
-    function articleSwitch () {
-        $('.arcticles .acco__item-head').click(function(){
+    function articleSwitch() {
+        $('.arcticles .acco__item-head').click(function () {
             // $('.arcticles .acco__item-head').parent().parent().toggleClass('active');
             // $('.arcticles .acco__item-head').parent().toggleClass('active');
             $(this).parent().parent().toggleClass('active');
-            $(this).parent().toggleClass('active');
+
+            var el = $(this).parent().toggleClass('active')
+            // if (el.hasClass('active')) {
+            //     el.toggleClass('text');
+            // }
+            // $(this).parent()
         })
     }
 
@@ -69,9 +74,9 @@ $(document).ready(function () {
     function accoDesktop() {
         $('.acco__item-head').click(function (e) {
 
-            
-            if ($(this).hasClass('active')){
-                
+
+            if ($(this).hasClass('active')) {
+
                 $('.acco').css('margin-bottom', 20);
                 $('.acco__item-head').removeClass('active');
                 $('.acco__item-head').next().removeClass('active');
@@ -87,7 +92,7 @@ $(document).ready(function () {
                 $(this).addClass('active');
                 $(this).next().addClass('active');
                 $(this).parent().parent().css('margin-bottom', $(this).next().outerHeight() + 44);
-                
+
             }
 
 
@@ -129,20 +134,20 @@ $(document).ready(function () {
             $('.acco__item-head').click(function (e) {
 
                 if ($(this).hasClass('active')) {
-    
+
                     $('.acco__item-head').removeClass('active');
                     $('.acco__item-head').next().removeClass('active');
                     $(this).removeClass('active');
                     $(this).next().removeClass('active');
-    
+
                 } else {
-    
+
                     $('.acco__item-head').removeClass('active');
                     $('.acco__item-head').next().removeClass('active');
-    
+
                     $(this).addClass('active');
                     $(this).next().addClass('active');
-    
+
                 }
             })
         }
@@ -158,13 +163,13 @@ $(document).ready(function () {
 
 
     function filter() {
-        $('.filters .filters__item').click(function(){
+        $('.filters .filters__item').click(function () {
             $('.filters .filters__item').removeClass('active')
             $(this).toggleClass('active')
 
             var filterValue = $(this).data().filter;
-    
-            $.each($('.portf__inner .acco__item'), function(i , el){
+
+            $.each($('.portf__inner .acco__item'), function (i, el) {
 
                 if (filterValue === $(this).data().value) {
                     $(this).fadeIn();
@@ -183,7 +188,7 @@ $(document).ready(function () {
 
     filter();
 
-    function checkValidate() {
+    function checkValidate(callback) {
         var form = $('form');
 
         $.each(form, function () {
@@ -232,6 +237,19 @@ $(document).ready(function () {
                     regacept: 'Необходимо согласие',
                     phone: 'Некорректный номер',
                     email: 'Некорректный e-mail'
+                },
+
+                submitHandler: function () {
+                    function thxModal() {
+                        $('.modal-overlay').addClass('modal-overlay--active');
+                        $('.modal_thx').addClass('modal--active');
+                    }
+
+                    $('span.error').click(function (e) {
+                        $(this).fadeOut(300);
+                    });
+
+                    thxModal();
                 }
             });
         });
@@ -241,8 +259,11 @@ $(document).ready(function () {
         jQuery.validator.addMethod('phone', function (value, element) {
             return this.optional(element) || /\+7\(\d+\)\d{3}-\d{2}-\d{2}/.test(value);
         });
+
     }
     checkValidate();
+
+
 
     $('input[placeholder="Ваш телефон"]').inputmask('+7(999)999-99-99');
 
