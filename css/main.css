@@ -1341,6 +1341,7 @@ span.error::after {
 .arcticles .acco .grid__item.active {
     max-width: 700px;
     transition: all 1.2s ease;
+    pointer-events: none;
     /* margin-right: 20px; */
 }
 
@@ -1493,6 +1494,10 @@ span.error::after {
 
 .js-black-soc .socials__link--in:hover {
     background-image: url(../img/socs/in2.svg);
+}
+
+.arcticles .grid-row{
+    flex-wrap: nowrap;
 }
 
 @media(max-width:1560px) {

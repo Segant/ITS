@@ -62,11 +62,11 @@ $(document).ready(function () {
             $('.arcticles .acco__item-head').click(function () {
 
                 var self = $(this);
-                $('.arcticles .acco__item').removeClass('active');
-                $('.arcticles .acco__item').removeClass('text');
+                $('.arcticles .acco__item-head').removeClass('active');
+                $('.arcticles .acco__item-head').removeClass('text');
                 if (self.parent().hasClass('active')) {
-                    $('.arcticles .acco__item').removeClass('active');
-                    $('.arcticles .acco__item').removeClass('text');
+                    $('.arcticles .acco__item-head').removeClass('active');
+                    $('.arcticles .acco__item-head').removeClass('text');
                 }
 
                 setTimeout(function () {
