@@ -196,6 +196,7 @@ $(document).ready(function () {
                 ignore: [],
                 errorClass: 'error',
                 validClass: 'success',
+                onkeyup: false,
                 rules: {
                     name: {
                         required: true

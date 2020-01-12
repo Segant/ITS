@@ -1621,6 +1621,13 @@ span.error::after {
         padding-right: 15px;
     }
 
+    .grid__item:hover .btn-small::after{
+            /* transform: rotate(90deg); */
+    }
+
+    .portf__inner .grid__item:hover .btn-small{
+        /* background-color: transparent; */
+    }
 
 }
 
