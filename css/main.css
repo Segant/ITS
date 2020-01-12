@@ -1453,7 +1453,7 @@ span.error::after {
     text-align: right;
     max-width: 236px;
     width: 100%;
-    z-index: 1;
+    z-index: 0;
     right: 0;
 }
 
@@ -1487,7 +1487,7 @@ span.error::after {
     background-image: url(../img/socs/in2.svg);
 }
 
-@media(max-width:1560px) {
+@media(max-width:1800px) {
 
     .burger {
         display: block;
