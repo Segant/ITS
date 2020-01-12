@@ -40,12 +40,14 @@ $(document).ready(function () {
 
                 if ($(this).hasClass('js-black-text')) {
                     $('.nav a[href="#' + id + '"]').parent().parent().addClass('js-dark-text');
+                    $('.share').addClass('js-black-soc');
                 }
                 // else if ($(this).offset().top >= $('.nav-el').last().offset().top) {
                 //     $('.nav a[href="#' + id + '"]').parent().parent().removeClass('js-dark-text');
                 // }
                 else {
                     $('.nav a[href="#' + id + '"]').parent().parent().removeClass('js-dark-text');
+                    $('.share').removeClass('js-black-soc');
                 }
 
                 $('.nav a').removeClass('active');

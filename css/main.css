@@ -1463,6 +1463,30 @@ span.error::after {
     background: #30d0a4;
 }
 
+.js-black-soc .socials__link--tw {
+        background-image: url(../img/socs/tw3.svg);
+}
+
+.js-black-soc .socials__link--vk {
+    background-image: url(../img/socs/vk3.svg);
+}
+
+.js-black-soc .socials__link--in {
+    background-image: url(../img/socs/in3.svg);
+}
+
+.js-black-soc .socials__link--tw:hover {
+    background-image: url(../img/socs/tw2.svg);
+}
+
+.js-black-soc .socials__link--vk:hover {
+    background-image: url(../img/socs/vk2.svg);
+}
+
+.js-black-soc .socials__link--in:hover {
+    background-image: url(../img/socs/in2.svg);
+}
+
 @media(max-width:1560px) {
 
     .burger {
