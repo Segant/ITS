@@ -329,14 +329,14 @@ body {
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-SemiBoldItalic.eot');
-    src: url('../fonts/Gilroy-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Gilroy-SemiBoldItalic.woff2') format('woff2'),
-        url('../fonts/Gilroy-SemiBoldItalic.woff') format('woff'),
-        url('../fonts/Gilroy-SemiBoldItalic.ttf') format('truetype'),
-        url('../fonts/Gilroy-SemiBoldItalic.svg#Gilroy-SemiBoldItalic') format('svg');
+    src: url('../fonts/Gilroy-SemiBold.eot');
+    src: url('../fonts/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-SemiBold.woff2') format('woff2'),
+        url('../fonts/Gilroy-SemiBold.woff') format('woff'),
+        url('../fonts/Gilroy-SemiBold.ttf') format('truetype'),
+        url('../fonts/Gilroy-SemiBold.svg#Gilroy-SemiBoldItalic') format('svg');
     font-weight: 600;
-    font-style: italic;
+    font-style: normal;
 }
 
 @font-face {
@@ -2039,5 +2039,7 @@ span.error::after {
         font-weight: 100;
     }
 
-    .title-dec {}
+    .title-dec {
+        font-weight: 600;
+    }
 }
