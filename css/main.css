@@ -1817,7 +1817,9 @@ span.error::after {
             /* transform: rotate(90deg); */
     }
 
-    
+    .acco .grid__item{
+        height: auto;
+    }
 }
 
 
